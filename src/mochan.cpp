@@ -245,7 +245,7 @@ void setup() {
 
   randomSeed(esp_random());
 
-  WiFi.softAP("mochan");
+  WiFi.softAP("Bluey");
   dnsServer.start(53,"*",WiFi.softAPIP());
   setupServer();
 

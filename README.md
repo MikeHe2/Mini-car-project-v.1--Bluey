@@ -19,7 +19,7 @@ Mini robot móvil basado en ESP32-C3 con control por WiFi (punto de acceso propi
 
 ## Funcionalidad
 
-- **Control remoto por WiFi:** el ESP32 crea su propia red WiFi (`softAP`, SSID: `mochan`) con un servidor web y DNS captivo. Al conectarse, se puede abrir un panel de control desde el navegador (botones: adelante, atrás, izquierda, derecha, stop).
+- **Control remoto por WiFi:** el ESP32 crea su propia red WiFi (`softAP`, SSID: `Bluey`) con un servidor web y DNS captivo. Al conectarse, se puede abrir un panel de control desde el navegador (botones: adelante, atrás, izquierda, derecha, stop).
 - **Cara animada:** usa la librería [FluxGarage RoboEyes](https://www.fluxgarage.com) para dibujar ojos animados en el OLED, con parpadeo automático e "idle mode".
 - **Modos de comportamiento aleatorio** (cuando no hay control manual activo):
   - `SLEEP` (`RANDOM_OFF`): sin movimientos aleatorios.
@@ -57,7 +57,7 @@ pio device monitor     # ver logs por Serial (115200 baud)
 ## Uso
 
 1. Encender el robot con el switch de alimentación (baterías conectadas, GND firme entre todos los componentes).
-2. Conectarse desde un celular/laptop a la red WiFi `mochan`.
+2. Conectarse desde un celular/laptop a la red WiFi `Bluey`.
 3. Se debería abrir automáticamente el panel de control (portal cautivo) o navegar manualmente a la IP del AP (por defecto `192.168.4.1`).
 4. Usar los botones direccionales para mover el robot manualmente, o elegir un modo (`SLEEP` / `WIGGLE` / `CURIOUS`) para que se mueva solo.
 
